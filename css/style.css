@@ -1030,8 +1030,11 @@ nav.main-menu {
 	font-size: 12px;
 }
 
-.main-menu {
+/* .main-menu {
 	text-align: center;
+} */
+.carousel-inner{
+	height: 600px;
 }
 
 .main-menu ul {
@@ -1050,7 +1053,7 @@ nav.main-menu {
 	font-size: 16px;
 	display: block;
 	font-weight: 500;
-	color: #fff;
+	color: #303f8e;
 	text-transform: uppercase;
 }
 
@@ -1230,7 +1233,69 @@ nav.main-menu {
 	line-height: 40px;
 	font-weight: 700;
 }
-
+.dropdown-parent{
+	position: relative;
+}
+.dropdown-container{
+	position: absolute;
+    top: 52px;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px 50px;
+	border: 1px solid #eee;
+    border-top: 5px solid #303f8e;
+	width: 100%;
+	z-index: 999;
+	display: none;
+}
+.dropdown-parent:hover .dropdown-container{
+	display: block;
+}
+.dropdown-container .dropdown-links a{
+	background: #f5f5f5;
+    border: 1px solid #ccc9c9;
+    margin-bottom: 1px;
+    margin: 0;
+    padding: 10px 15px;
+    color: #000;
+    box-shadow: 0 0 0 1px #ccc9c9 inset, 0 0 0 rgba(0,0,0,.1);
+	transition: .5s;
+	display: block;
+    color: #6e7581 !important;
+    width: 100%;
+}
+.dropdown-container .dropdown-links h3 a{
+	font-size: 23px;
+    color: #000 !important;
+    margin-top: 8px;
+    background: #ccc;
+}
+.dropdown-container .dropdown-links a:hover {
+    color: #fff !important;
+    box-shadow: 0 0 0 4em #303f8e inset, 0 5px 8px rgba(0,0,0,.1);
+    opacity: .9;
+    transform: translateY(1px);
+}
+.dropdown-container:before {
+    content: "";
+    top: -15px;
+    position: absolute;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid #303f8e;
+    z-index: 999999999;
+    right: 17%;
+}
+.dropdown-container:after {
+    content: "";
+    top: -15px;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: -28px;
+    background-color: transparent;
+}
 .text-b {
 	color: #fff;
 	font-size: 28px;
@@ -1643,8 +1708,9 @@ input[type="radio"] .styled:checked+label::after {
 ---------------------------------------------------------------------*/
 
 .header {
-	background: #303f8e;
-	padding: 10px 0px;
+	background: #ffffff;
+    padding: 10px 0px;
+    border-bottom: 1px solid #eee;
 }
 
 .logo a {
@@ -1664,7 +1730,7 @@ input[type="radio"] .styled:checked+label::after {
 .banner-main {
 	position: relative;
 }
-
+/* 
 .banner-main .carousel-caption h1 {
 	color: #fff;
 	font-size: 70px;
@@ -1693,7 +1759,7 @@ input[type="radio"] .styled:checked+label::after {
 .banner-main .carousel-caption a:hover {
 	border: #000 solid 1px;
 	background: #000;
-}
+} */
 
 #myCarousel a.carousel-control-next {
 	position: absolute;
@@ -1768,6 +1834,21 @@ input[type="radio"] .styled:checked+label::after {
 
 .about .img-box {
 	text-align: center;
+	position: relative;
+	z-index: 99;
+}
+.img-box img{
+	max-width: 50%;
+}
+.img-box figure::after {
+    content: "";
+    border: 10px solid #303f8e;
+    height: 100%;
+    width: 50%;
+    top: -24px;
+    left: 280px;
+    position: absolute;
+    z-index: -1;
 }
 
 .about .img-box figure {
@@ -1836,7 +1917,7 @@ input[type="radio"] .styled:checked+label::after {
 
 .service .service-box .hoverle a {
 	padding: 5px 30px;
-	color: #40cfa4;
+	color: #303f8e;
 }
 
 .service .titlepage {
@@ -2170,8 +2251,9 @@ img.zoom {
 }
 
 .footer {
-	background: #023023;
-	padding-top: 55px;
+    background: #303f8e;
+    padding-top: 55px;
+    border-top: 4px solid #fff;
 }
 
 .footer .address h3 {
@@ -2222,23 +2304,31 @@ img.zoom {
 	background-color: #000000;
 	color: #fff;
 }
-
-.send-btn:hover {
-	background-color: #ff0000;
-	border: #ff0000 solid 2px;
-	color: #fff;
+.first-card {
+	text-align: center;
+	width: 70%;
+	margin: auto;
 }
+.first-card h3{
+ padding: 10px 0;
+ background-color: #303f8e;
+ color: #fff;
+}
+.first-card h3 , .first-card img{
+	width: 100%;
+}
+
 
 ul.contant_icon {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	float: left;
+	display: flex;
+	justify-content: center;
 }
 
 ul.contant_icon li {
-	float: left;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -2287,23 +2377,6 @@ ul.contant_icon li img {
 	border: #000 solid 1px;
 }
 
-.copyright {
-	background-color: #fff;
-	padding: 20px 0px;
-	;
-	margin-top: 55px;
-}
-
-.copyright p {
-	color: #000;
-	font-size: 18px;
-	line-height: 22px;
-	text-align: center;
-}
-
-.copyright a:hover {
-	color: #303f8e
-}
 
 
 /*---------------------------------------------------------------------
