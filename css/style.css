@@ -2304,19 +2304,7 @@ img.zoom {
 	background-color: #000000;
 	color: #fff;
 }
-.first-card {
-	text-align: center;
-	width: 70%;
-	margin: auto;
-}
-.first-card h3{
- padding: 10px 0;
- background-color: #303f8e;
- color: #fff;
-}
-.first-card h3 , .first-card img{
-	width: 100%;
-}
+
 
 
 ul.contant_icon {
@@ -2473,4 +2461,91 @@ ul.contant_icon li img {
 	left: 10px;
 	top: inherit;
 	bottom: 10px;
+}
+/* ..................................................... */
+.first-card {
+	text-align: center;
+	width: 70%;
+	margin: auto;
+	height: 100%;
+}
+.first-card h3{
+ padding: 10px 0;
+ background-color: #303f8e;
+ color: #fff;
+ transition: .6s;
+ border: 1px solid #303f8e;
+}
+.first-card:hover h3{
+	background-color: #fff;
+	color: #303f8e;
+}
+.first-card h3 , .first-card img{
+	width: 100%;
+}
+.teacher-person{
+	height: 230px;
+}
+.teacher-person img{
+	max-height: 230px;
+}
+.login-panner{
+	background-image: url(../images/login.jpg);
+	height: 80vh;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;	
+}
+.login-panner form{
+	width: 50%;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+	padding: 15px;
+	color: #fff;
+	font-weight: bold;
+}
+.login-panner form .btn{
+	color:#fff;
+	background-color:#303f8e ;
+}
+.mrahel-panner{
+		background-image: url(../images/cover-3.jpg);
+		height: 400px;
+		background-size: cover;
+		background-attachment: fixed;
+		position: relative;	
+}
+.overlay-1{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+}
+.overlay-1 h2{
+	color: #fff;
+}
+.heading hr {
+    width: 5%;
+    border-bottom: 1px solid #303f8e;
+    margin-right: auto;
+    margin-left: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.lessons-container p{
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.lessons-container i{
+	color:#303f8e;
+}
+.lesson-video iframe{
+	height: 500px;
+	width: 100%;
 }
