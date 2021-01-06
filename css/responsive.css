@@ -277,9 +277,7 @@
     .top_layer::before {
         display: none;
     }
-    .mean-last {
-        display: none;
-    }
+  
     .download .titlepage h2 {
         font-size: 35px;
     }
@@ -336,9 +334,7 @@
     .mean-container .mean-bar {
         margin-top: 0;
     }
-    .mean-last {
-        display: none;
-    }
+  
     .head-top {
         display: none;
     }
@@ -385,5 +381,22 @@
     }
     ul.contant_icon {
         margin-bottom: 20px;
+    }
+    .dropdown-container {
+        position: initial;
+        display: block;
+        border:none;
+    }
+    .dropdown-container:before , .dropdown-container:after{
+        display: none 
+    }
+    .logo{
+        display: none;
+    }
+    .header{
+        padding:0;
+    }
+    .row.align-items-center .col-xl-9.col-lg-9.col-md-9.col-sm-9{
+        padding:0;
     }
 }
